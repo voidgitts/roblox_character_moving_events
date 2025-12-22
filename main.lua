@@ -4,7 +4,8 @@ jump = game.UserInputService.JumpRequest
 jump:Connect(function()
 	print(game.Players.LocalPlayer.name .. " has jumped!")
 end)
-
+--the code gives me an error when i try to use the elseif statement:PPP
+--but its still works perfectly fine with the if statements so idc (remove ts)
 game.UserInputService.InputBegan:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.W then
 		print(game.Players.LocalPlayer.name .. " moved forward!")
