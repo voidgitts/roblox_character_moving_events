@@ -20,3 +20,18 @@ game.UserInputService.InputBegan:Connect(function(input)
 		print(game.Players.LocalPlayer.name .. " moved right!")
 	end
 end)
+
+game.UserInputService.InputEnded:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.W then
+		print(game.Players.LocalPlayer.name .. " stopped moving forward!")
+	end
+	if input.KeyCode == Enum.KeyCode.A then
+		print(game.Players.LocalPlayer.name .. " stopped moving left!")
+	end
+	if input.KeyCode == Enum.KeyCode.S then
+		print(game.Players.LocalPlayer.name .. " stopped moving backward!")
+	end
+	if input.KeyCode == Enum.KeyCode.D then
+		print(game.Players.LocalPlayer.name .. " stopped moving right!")
+	end
+end)
